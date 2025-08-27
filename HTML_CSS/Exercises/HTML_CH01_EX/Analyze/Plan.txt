@@ -1,0 +1,13 @@
+1)
+  a) This website will be an overview dedicated to someones life.
+  b) The users of the website are people want to learn about them.
+  c) These users may be on mobile, desktop, or a tablet.
+  d)The main page will have a short introduction and above that near the top there will be hyperlinks about different topics of them
+2)
+  a) I will need pictures of the person, of objects that relate to them for a period of their life or explaining something.
+  b) Their will be different pages for periods of their life, I will use a clean letter font such as sans
+  c) I will use their favorite color or that most resonates with them.
+  d) People can use a text to speech option and a dark mode.
+3)
+  a) Visual studio code, any txt editor
+  b) Visual studio code most likely
