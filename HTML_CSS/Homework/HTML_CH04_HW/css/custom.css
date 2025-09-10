@@ -1,0 +1,90 @@
+/*
+  Author: Joshua Arellano
+  Date: 9/10/2025
+  File Name: custom.css
+*/
+
+/* Body and Img Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, hsla(246, 28%, 55%, 0.874), hsl(0, 0%, 85%));
+  color: hsl(0, 0%, 20%);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headings */
+header {
+  color: white;
+  background: linear-gradient(to right, rgba(5, 69, 101, 0.687), rgba(5, 69, 101, 0.8));
+  padding: 10px 0;
+  text-align: center;
+  border: 10px dashed hsla(0, 0%, 0%, 0.281);
+}
+h1 {
+  color: rgb(5, 69, 101);
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgba(93, 122, 136, 0.8);
+  padding: 8px;
+}
+nav h2 {
+  color: white;
+  display: inline;
+  font-style: italic;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:focus {
+  outline: 2px solid yellow;
+}
+/* Main */
+main div{
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #0000001a;
+}
+main p {
+  line-height: 1.6;
+  height: auto;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.1);
+}
+#rail {
+  border: 2px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  width: 25%;
+  float: right;
+} 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2.5px;
+  background-color: rgba(93, 122, 136, 0.8);
+  color: white;
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+}
