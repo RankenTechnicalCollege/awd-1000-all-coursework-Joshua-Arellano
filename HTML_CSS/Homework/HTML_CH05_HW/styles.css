@@ -1,0 +1,48 @@
+/* Styles for body and img elements */
+body {
+  font-family:'Noto Sans', sans-serif;
+  background-color:rgb(83, 145, 83);
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Styles for Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: rgb(83, 145, 83);
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  padding: 1%;
+  font-size: 20px;
+}
+nav a:hover {
+  color: rgb(156, 223, 21);
+}
+
+/* Styles for Main */
+.frog {
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    font-size: 25px;
+  }
+  main p {
+    font-size: 20px;
+  }
+}

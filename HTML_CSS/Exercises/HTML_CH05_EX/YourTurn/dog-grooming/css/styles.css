@@ -1,0 +1,138 @@
+/*
+  Author: Joshua Arellano
+  Date: 9/9/2025
+  File Name: styles.css
+*/
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Style rule for body and images */
+body {
+  background-color: #a6a7db;
+  font-family: Verdana, Arial, sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Hide h2 header */
+.hide {
+  display: none;
+}
+/* Style rules for header */
+header {
+  background-color: #0000003a;
+  text-align: center;
+  padding: 1%;
+  font-family: 'Arimo', sans-serif;
+}
+header h2 {
+  font-style: italic;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: #e4e3e96e;
+  font-family: 'Inter', sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top: #000000 solid 1px;
+}
+nav li a {
+    display: block;
+    color: #000000;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+  font-family: Verdana, Arial, sans-serif;
+  padding: 2% 0;
+  overflow: auto;
+}
+main p {
+  font-size: 1.25em;
+  padding: 2% 0;
+}
+main h2 {
+  padding-top: 2%;
+}
+main ul {
+  list-style-type: none;
+}
+main ul li {
+  padding: 2% 0;
+}
+#welcome {
+  text-align: center;
+}
+#services {
+  text-align: center;
+  padding-bottom: 5%;
+}
+#bath {
+  margin: 0 auto;
+  padding: 5% 0;
+}
+#nail {
+  margin: 0 auto;
+  padding: 5% 0;
+}
+#contact {
+  text-align: center;
+}
+.small {
+  font-size: 0.75em;
+  font-style: italic;
+  text-align: center;
+  margin-top: 1.25em;
+}
+.map {
+  width: 95%;
+  height: 75%;
+  padding: 5% auto;
+  border-radius: 5px;
+}
+#tel-link {
+  background-color: #7277c0;
+  padding: 2%;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 5px;
+}
+#tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+}
+
+/* Style rules for footer */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #0000003a;
+  color: #000000;
+
+}
+footer p {
+  margin: 0.5% 0;
+}
+footer a {
+  color: #000000;
+  text-decoration: none;
+}

@@ -1,0 +1,129 @@
+/*
+Author: Joshua Arellano
+Date: 9/9/2025
+File Name: styles.css
+*/
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rule for body and images */
+body {
+  background-color: #c786e6;
+  font-family: 'DM Sans', sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for header */
+header {
+  background-color: #0000003a;
+  text-align: center;
+  padding: 1%;
+}
+header h2 {
+  font-style: italic;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: #e4e3e946;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li {
+    display: block;
+    border: #0000002e 1px solid;
+    padding: 10px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Style rules for main content */
+main {
+  padding: 2%;
+}
+main p {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+main h2 {
+  margin: 5px 0;
+}
+main h3 {
+  margin: 5px 0;
+}
+main ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+main ul li {
+  margin-bottom: 0.5em;
+}
+main dl {
+}
+main dl dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+main dl dd {
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+.content {
+  text-align: center;
+}
+.maps {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  width: 80%;
+  height: 400px;
+}
+.tel-link a {
+  text-decoration: none;
+  background-color: #952ec468;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* Style rules for footer */
+footer {
+  background-color: #0000003a;
+  text-align: center;
+  padding: 1%;
+  margin-top: 2em;
+}
+footer p {
+  font-size: 0.85em;
+  color: #000;
+}
+#button {
+  background-color: #00000000;
+  border: none;
+  color: #00000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#button:hover {
+  background-color: #00000050;
+  color: #000;
+  cursor: pointer;
+}
