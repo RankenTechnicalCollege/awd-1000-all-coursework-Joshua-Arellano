@@ -71,12 +71,14 @@ main p {
 }
 main h2 {
   padding-top: 2%;
+  font-size: 1.75em;
 }
 main ul {
   list-style-type: none;
 }
 main ul li {
-  padding: 1%
+  padding: 1%;
+  font-size: 1.25em;
 }
 #welcome {
   text-align: center;
@@ -134,17 +136,19 @@ footer {
   color: #000000;
 
 }
+
 footer p {
   margin: 0.5% 0;
 }
+
 footer a {
   color: #000000;
   text-decoration: none;
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 600px) {
-  /* Display tab-desk class, hide mobile class */
+@media screen and (min-width: 642px) {
+  /* Display tab-desk and banner classes, hide mobile class */
   .tab-desk {
     display: block;
   }
@@ -153,6 +157,11 @@ footer a {
     display: none;
   }
 
+  .banner {
+    display: block;
+  }
+
+  /* Tablet Viewport: Navigation Styles */
   nav li {
     font-size: 1.25em;
     display: inline-block;
@@ -162,27 +171,67 @@ footer a {
   nav li:first-child {
     border: none;
   }
-  #bath, #nail {
-    float: left;
-    padding-left: 5%;
-  }
 
-  .hide {
-    display: block;
+  /* Tablet Viewport: Services Styles */
+  .service-list li{
+    padding: 1.5em 0;
   }
 }
+
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 935px) {
 /* Display hide class, hide tel-link id */
   .tel-link {
     display: none;
   }
 
+  #bath, #nail {
+    float: left;
+    padding-left: 5%;
+    width: 40%;
+  }
+
+  body {
+    background: linear-gradient(to right, #a6a7db, #e4e3e9);
+  }
+
+  nav li {
+    font-size: 1.5em;
+  }
+
+  .service-list {
+    margin: 5%;
+    font-size: 75%;
+    column-count: 2;
+  }
+
+  .service-list li {
+    padding: 2em 0;
+  }
+
+  .service-list li:first-child, .service-list li:nth-child(4) {
+    padding: 0 0;
+  }
 }
 /* Media Query for Large Desktop Viewport */
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1700px) {
   nav li {
     font-size: 2em;
   }
+
+  main ul {
+    font-size: 95%;
+  }
+
+  body {
+    width: 1700px;
+    margin: 0 auto;
+  }
 }
 /* Media Query for Print */
+@media print {
+  #wrapper {
+    background-color: #fff;
+    color: #000;
+  }
+}

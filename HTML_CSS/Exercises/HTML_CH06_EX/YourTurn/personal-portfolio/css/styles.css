@@ -13,9 +13,11 @@ File Name: styles.css
 
 /* Style rule for body and images */
 body {
-  background-color: #c786e6;
+  background-color: #40423c;
   font-family: 'DM Sans', sans-serif;
+  color: #6ece96;
 }
+
 img {
   max-width: 100%;
   display: block;
@@ -27,67 +29,86 @@ header {
   text-align: center;
   padding: 1%;
 }
-header h2 {
-  font-style: italic;
+
+header h1 {
+  padding-bottom: 1%;
+}
+
+header img {
+  display: none;
 }
 
 /* Style rules for navigation area */
 nav {
   background-color: #e4e3e946;
 }
+
 nav ul {
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
+
 nav ul li {
-    display: block;
-    border: #0000002e 1px solid;
-    padding: 10px 0;
+  display: block;
+  border: #0000002e 1px solid;
+  padding: 10px 0;
 }
+
 nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2em;
-}
-nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: none;
+  color: #6ece96;
+  font-size: 1.2em;
 }
 
 /* Style rules for main content */
 main {
   padding: 2%;
 }
+
+main img {
+  margin: 0 auto;
+}
+
 main p {
   font-size: 1.25em;
   margin-bottom: 1em;
-  text-align: left;
+  text-align: center;
 }
+
 main h2 {
   margin: 5px 0;
 }
+
 main h3 {
   margin: 5px 0;
 }
+
 main ul {
   list-style-type: square;
   margin-left: 20px;
 }
+
 main ul li {
   margin-bottom: 0.5em;
 }
-main dl {
+
+main ul a {
+  color: #c0ffda;
 }
+
 main dl dt {
   font-weight: bold;
   margin-top: 1em;
 }
+
 main dl dd {
   margin-left: 20px;
-  margin-bottom: 1em;
 }
+
 .content {
   text-align: center;
 }
+
 .maps {
   display: block;
   margin: 0 auto;
@@ -95,12 +116,14 @@ main dl dd {
   width: 80%;
   height: 400px;
 }
+
 .tel-link a {
   text-decoration: none;
-  background-color: #952ec468;
+  background-color: #b4ffdc68;
   padding: 5px;
   border-radius: 5px;
 }
+
 /* Style rules for footer */
 footer {
   background-color: #0000003a;
@@ -108,22 +131,87 @@ footer {
   padding: 1%;
   margin-top: 2em;
 }
+
 footer p {
   font-size: 0.85em;
-  color: #000;
+  color: #6ece96;
 }
-#button {
-  background-color: #00000000;
-  border: none;
-  color: #00000000;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+
+footer p a {
+  color: #c0ffda;
 }
-#button:hover {
-  background-color: #00000050;
-  color: #000;
-  cursor: pointer;
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 642px) {
+  /* Hide header image */
+  header img {
+    display: block;
+    width: 100%;
+  }
+
+  /* Tablet viewport: nav styles */
+  nav ul {
+    padding: 15px 0;
+  }
+
+  nav ul li {
+    display: inline;
+    border: none;
+    padding: 0 15px;
+    font-size: 1.25em;
+  }
+
+  /* Tablet viewport: main styles */
+  .maps {
+    height: 500px;
+  }
+}
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 1050px) {
+  /* Desktop viewport: body and main styles */
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  main {
+    font-size: 0.95em;
+  }
+
+  main img {
+    float: left;
+    margin-right: 2%;
+  }
+
+  /* Desktop viewport: nav styles */
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Desktop viewport: contact styles */
+  .tel-link a {
+    background-color: #40423c;
+  }
+}
+
+/* Media query for large-desktop */
+@media screen and (min-width: 1400px) {
+  /* Large-desktop viewport: body and main styles */
+  body {
+    font-size: 1.1em;
+  }
+
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+  
+  main dd {
+    font-size: 90%;
+  }
+
+  /* Large-desktop viewport: maps styles */
+  .maps {
+    height: 600px;
+  }
 }
