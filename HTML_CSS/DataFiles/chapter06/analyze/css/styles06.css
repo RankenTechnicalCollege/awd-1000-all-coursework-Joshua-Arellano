@@ -126,7 +126,7 @@ footer {
     /* Desktop Viewport: Style rules for the main content */
     main {
         border-style: none;
-        margin-bottom: 1em 0;
+        margin-bottom: 1em;
         overflow: auto;
     }
 
