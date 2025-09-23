@@ -6,9 +6,9 @@ File Name: styles.css
 
 /* CSS Reset */
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  margin: 0 auto;
+  padding: 0 auto;
+  border: 0 auto;
 }
 
 /* Style rule for body and images */
@@ -32,10 +32,12 @@ header {
 
 header h1 {
   padding-bottom: 1%;
+  text-shadow: 2px 1px 10px #000000;
 }
 
 header img {
   display: none;
+  box-shadow: 2px 1px 10px #000000;
 }
 
 /* Style rules for navigation area */
@@ -65,10 +67,6 @@ main {
   padding: 2%;
 }
 
-main img {
-  margin: 0 auto;
-}
-
 main p {
   font-size: 1.25em;
   margin-bottom: 1em;
@@ -96,17 +94,14 @@ main ul a {
   color: #c0ffda;
 }
 
-main dl dt {
+.content figure h3 {
   font-weight: bold;
   margin-top: 1em;
 }
 
-main dl dd {
-  margin-left: 20px;
-}
-
-.content {
-  text-align: center;
+.content figure p {
+  text-align: left;
+  margin-bottom: 1em;
 }
 
 .maps {
@@ -146,7 +141,8 @@ footer p a {
   /* Hide header image */
   header img {
     display: block;
-    width: 100%;
+    width: 250px;
+    margin: 0 auto;
   }
 
   /* Tablet viewport: nav styles */
@@ -178,11 +174,18 @@ footer p a {
     font-size: 0.95em;
   }
 
-  main img {
-    float: left;
-    margin-right: 2%;
+  .grid {
+    display: grid;
+    grid-gap: 40px;
   }
 
+  .grid figure {
+    grid-template-columns: auto;
+  }
+
+  .grid aside {
+    grid-column: 1 / span 2;
+  }
   /* Desktop viewport: nav styles */
   nav ul li a:hover {
     text-decoration: underline;
@@ -199,14 +202,14 @@ footer p a {
   /* Large-desktop viewport: body and main styles */
   body {
     font-size: 1.1em;
+    margin: 0 auto;
   }
 
   main {
-    width: 75%;
-    margin: 0 auto;
+    width: 1400px;
   }
   
-  main dd {
+  .content p {
     font-size: 90%;
   }
 
