@@ -81,10 +81,6 @@ main ul li {
   font-size: 1.25em;
 }
 
-article {
-  padding:
-}
-
 section {
   padding: 5%;
 }
@@ -100,7 +96,7 @@ aside {
 figure {
   margin: 0 auto;
   text-align: center;
-  padding: 15px
+  padding: 15px;
 }
 
 figcaption {
@@ -227,7 +223,7 @@ footer a {
     display: none;
   }
 
-  #bath, #nail {
+  #bath {
     float: left;
     padding-left: 5%;
     width: 40%;
