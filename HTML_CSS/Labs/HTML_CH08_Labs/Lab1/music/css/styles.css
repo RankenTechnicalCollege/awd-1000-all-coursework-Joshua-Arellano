@@ -128,9 +128,13 @@ main p {
 }
 
 .map {
+    width: 100%;
+    margin: 2% auto;
+}
+.map iframe {
     border: 5px solid #373684;
-    width: 95%;
-    height: 50%;
+    width: 100%;
+    display: block;
 }
 
 /* Style rules for table */
@@ -189,6 +193,28 @@ figcaption {
     font-weight: bold;
 }
 
+/* Style rules for form elements */
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+}
 /* Style rules for footer content */
 footer {
     text-align: center;
@@ -248,6 +274,12 @@ footer a {
     aside {
         grid-column: 1 / span 2;
     }
+
+/* Tablet Viewport: Style rule for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px), print {
@@ -297,6 +329,17 @@ footer a {
 /* Desktop Viewport: Style rules for table */
     table {
         width: 70%;
+    }
+
+/* Desktop Viewport: Style rules for form elements */
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
     }
 }
 
