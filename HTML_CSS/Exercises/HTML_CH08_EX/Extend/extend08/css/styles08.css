@@ -2,3 +2,46 @@
   Author: Joshua Arellano
   Date: 9/23/2025
 */
+
+/* CSS Reset */
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Body Style Rules */
+body {
+  background-color: #ffe5dc;
+}
+
+/* Header Style Rules */
+h1 {
+  text-align: center;
+  margin: 15px;
+}
+/* Table Style Rules */
+table {
+  border: #fd4d0c 4px solid;
+  box-shadow: #792101 4px 4px 8px;
+}
+
+th {
+  background-color: #a22c02;
+  padding: 10px;
+  color: #ffe5dc;
+}
+td {
+  border: #a22c02 solid 2px;
+  padding: 10px 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #fe9772;
+}
+
+footer {
+  text-align: center;
+  margin: 15px;
+  font-size: 0.75em;
+}

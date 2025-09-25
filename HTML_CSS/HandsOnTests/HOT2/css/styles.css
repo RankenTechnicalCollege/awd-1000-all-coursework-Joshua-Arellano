@@ -26,13 +26,16 @@ header nav a {
 main {
   background-color: #5d4e4e;
 }
+
 #hero {
   background-image: url('../images/coffee.jpg');
-  background-size: cover;
-  height: 400px;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30%;
   color: white;
-  padding: 20px 5px;
+  padding: 100px 0;
 }
 
 #about {
@@ -73,6 +76,12 @@ main {
 #location {
   text-align: center;
   padding: 10px;
+}
+
+#location iframe {
+  width: 80%;
+  height: 300px;
+  border: none;
 }
 
 #contact {
