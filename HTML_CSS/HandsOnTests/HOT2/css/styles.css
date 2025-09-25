@@ -13,15 +13,77 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #0a421b;
-  color: #b2ffbc;
+  background-color: #190e0e;
+  color: #ff9393;
   padding: 25px 15px;
 }
+
 header nav a {
-
+  color: #ffffff;
+  text-decoration: none;
 }
-/* Navigation Styles */
-
 /* Main Content Styles */
+main {
+  background-color: #5d4e4e;
+}
+#hero {
+  background-image: url('../images/coffee.jpg');
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  color: white;
+  padding: 20px 5px;
+}
+
+#about {
+  padding: 10px;
+}
+#about img {
+  float: left;
+  width: 50%;
+  margin: 10px;
+}
+
+#about p {
+  line-height: 1.8em;
+  margin: 20px;
+}
+
+#menu-preview {
+  clear: both;
+  padding: 5px;
+}
+
+#menu-preview h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+.menu-item {
+  border: #190e0e 1px solid;
+  margin: 10px auto;
+  background-color: rgb(163, 146, 146);
+  width: 95%;
+}
+
+.menu-item span {
+  font-weight: bold;
+  color: #190e0e;
+}
+
+#location {
+  text-align: center;
+  padding: 10px;
+}
+
+#contact {
+  padding: 50px;
+}
 
 /* Footer Styles */
+footer {
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  background-color: #190e0e;
+  color: #ff9393;
+}
