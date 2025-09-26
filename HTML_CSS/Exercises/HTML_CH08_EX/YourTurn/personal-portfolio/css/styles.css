@@ -23,6 +23,11 @@ img {
   display: block;
 }
 
+/* Hide Table */
+table {
+  display: none;
+}
+
 /* Style rules for header */
 header {
   background-color: #0000003a;
@@ -40,6 +45,10 @@ header img {
   box-shadow: 2px 1px 10px #000000;
 }
 
+figcaption {
+  font-style: italic;
+  padding: 2%;
+}
 /* Style rules for navigation area */
 nav {
   background-color: #e4e3e946;
@@ -115,6 +124,43 @@ main ul a {
   border-radius: 5px;
 }
 
+/* Style rules for Forms */
+form {
+  text-align: center;
+  margin-top: 1em;
+}
+
+legend {
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+
+label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+input {
+  width: 50%;
+  padding: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.row {
+  padding: 2% 10%;
+}
+
+button {
+  background-color: #6ece96;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #40423c;
+}
+
 /* Style rules for footer */
 footer {
   background-color: #0000003a;
@@ -157,20 +203,9 @@ footer p a {
   .maps {
     height: 500px;
   }
-}
 
-/* Media query for desktop viewport */
-@media screen and (min-width: 1050px) {
-  /* Desktop viewport: body and main styles */
-  header h1 {
-    font-size: 2.5em;
-  }
-
-  main {
-    font-size: 0.95em;
-  }
-
-  .grid {
+  /* Tablet Viewport: Grid Styles */
+   .grid {
     display: grid;
     grid-gap: 40px;
   }
@@ -182,6 +217,51 @@ footer p a {
   .grid aside {
     grid-column: 1 / span 2;
   }
+
+  /* Tablet viewport: Form Styles */
+  form {
+    text-align: left;
+  }
+
+  input {
+    width: 246px;
+  }
+
+  textarea {
+    width: 70%;
+  }
+
+  label {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  .row {
+    padding: 10px;
+  }
+}
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 1050px) {
+  /* Hides About me grid figure and displays table */
+  .grid {
+    display: none;
+  }
+
+  table {
+    display: table;
+  }
+
+  /* Desktop viewport: body and main styles */
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  main {
+    font-size: 0.95em;
+  }
+
+
   /* Desktop viewport: nav styles */
   nav ul li a:hover {
     text-decoration: underline;
@@ -190,6 +270,30 @@ footer p a {
   /* Desktop viewport: contact styles */
   .tel-link a {
     background-color: #40423c;
+  }
+
+  /* Desktop viewport: Table styles */
+  table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    display: table;
+  }
+
+  th {
+    font-size: 1.5em;
+    
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #6ece96;
+    text-align: left;
+  }
+
+  .side {
+    font-size: 1.25em;
+    font-weight: bold;
   }
 }
 
