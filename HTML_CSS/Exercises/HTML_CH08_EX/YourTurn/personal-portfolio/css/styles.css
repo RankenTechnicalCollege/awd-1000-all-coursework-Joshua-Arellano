@@ -1,0 +1,216 @@
+/*
+Author: Joshua Arellano
+Date: 9/9/2025
+File Name: styles.css
+*/
+
+/* CSS Reset */
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rule for body and images */
+body {
+  background-color: #40423c;
+  font-family: 'DM Sans', sans-serif;
+  color: #6ece96;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for header */
+header {
+  background-color: #0000003a;
+  text-align: center;
+  padding: 1%;
+}
+
+header h1 {
+  padding-bottom: 1%;
+  text-shadow: 2px 1px 10px #000000;
+}
+
+header img {
+  display: none;
+  box-shadow: 2px 1px 10px #000000;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: #e4e3e946;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: block;
+  border: #0000002e 1px solid;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6ece96;
+  font-size: 1.2em;
+}
+
+/* Style rules for main content */
+main {
+  padding: 2%;
+}
+
+main p {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+main h2, main h3 {
+  margin: 5px 0;
+}
+
+main ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+main ul li {
+  margin-bottom: 0.5em;
+}
+
+main ul a {
+  color: #c0ffda;
+}
+
+.content figure h3 {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.content figure p {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.maps {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  width: 80%;
+  height: 400px;
+}
+
+.tel-link a {
+  text-decoration: none;
+  background-color: #b4ffdc68;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Style rules for footer */
+footer {
+  background-color: #0000003a;
+  text-align: center;
+  padding: 1%;
+  margin-top: 2em;
+}
+
+footer p {
+  font-size: 0.85em;
+  color: #6ece96;
+}
+
+footer p a {
+  color: #c0ffda;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 642px) {
+  /* Hide header image */
+  header img {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  /* Tablet viewport: nav styles */
+  nav ul {
+    padding: 15px 0;
+  }
+
+  nav ul li {
+    display: inline;
+    border: none;
+    padding: 0 15px;
+    font-size: 1.25em;
+  }
+
+  /* Tablet viewport: main styles */
+  .maps {
+    height: 500px;
+  }
+}
+
+/* Media query for desktop viewport */
+@media screen and (min-width: 1050px) {
+  /* Desktop viewport: body and main styles */
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  main {
+    font-size: 0.95em;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 40px;
+  }
+
+  .grid figure {
+    grid-template-columns: auto;
+  }
+
+  .grid aside {
+    grid-column: 1 / span 2;
+  }
+  /* Desktop viewport: nav styles */
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Desktop viewport: contact styles */
+  .tel-link a {
+    background-color: #40423c;
+  }
+}
+
+/* Media query for large-desktop */
+@media screen and (min-width: 1400px) {
+  /* Large-desktop viewport: body and main styles */
+  body {
+    font-size: 1.1em;
+    margin: 0 auto;
+  }
+
+  main {
+    width: 1400px;
+  }
+  
+  .content p {
+    font-size: 90%;
+  }
+
+  /* Large-desktop viewport: maps styles */
+  .maps {
+    height: 600px;
+  }
+}

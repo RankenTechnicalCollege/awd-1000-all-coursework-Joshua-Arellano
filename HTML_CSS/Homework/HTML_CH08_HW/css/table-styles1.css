@@ -1,0 +1,27 @@
+/*
+  Author: Joshua Arellano
+  Date: 9/25/2025
+*/
+
+/* CSS Reset*/
+* {
+  margin: 0 auto;
+  border: 0;
+}
+
+/* Styles for Table */
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+  background-color: yellow;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+td:last-child {
+  text-align: right;
+}
