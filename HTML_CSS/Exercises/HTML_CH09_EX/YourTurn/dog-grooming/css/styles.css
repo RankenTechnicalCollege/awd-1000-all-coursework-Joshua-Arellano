@@ -1,0 +1,358 @@
+/*
+  Author: Joshua Arellano
+  Date: 9/9/2025
+  File Name: styles.css
+*/
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Style rule for body and images */
+body {
+  background-color: #a6a7db;
+  font-family: Verdana, Arial, sans-serif;
+}
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Hide h2 header, hide hero */
+.hide {
+  display: none;
+}
+
+/* Style rules for header */
+header {
+  background-color: #0000003a;
+  text-align: center;
+  padding: 1%;
+  font-family: 'Arimo', sans-serif;
+}
+header h2 {
+  font-style: italic;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: #e4e3e96e;
+  font-family: 'Inter', sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+nav li {
+    display: block;
+    font-size: 1.75em;
+    font-weight: bold;
+    border-top: #000000 solid 1px;
+}
+nav li a {
+    display: block;
+    color: #000000;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+  padding: 10px 0;
+  overflow: auto;
+}
+main p {
+  font-size: 1.25em;
+  padding: 2% 0;
+  clear: left;
+}
+main h2 {
+  padding-top: 10px;
+  font-size: 1.75em;
+  text-align: center;
+}
+main ul {
+  list-style-type: none;
+}
+main ul li {
+  padding: 1%;
+  font-size: 1.25em;
+}
+
+/* Style rules for Section, Aside, Figure, and Figcaption */
+section {
+  padding: 5%;
+}
+
+aside {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  text-shadow: 2px 1px rgba(128, 121, 151, 0.712)
+}
+
+figure {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+figcaption {
+  padding-top: 4%;
+  font-size: 1.25em;
+}
+
+.shadow {
+  margin: 0 auto;
+  box-shadow: 5px 5px rgba(113, 114, 163, 0.849)
+}
+
+#welcome {
+  text-align: center;
+}
+#services {
+  padding-bottom: 5%;
+}
+
+#nail, #bath, img {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#contact {
+  text-align: center;
+}
+.small {
+  font-size: 0.75em;
+  font-style: italic;
+  text-align: center;
+  padding-top: 5px;
+}
+.map {
+  width: 95%;
+  height: 300px;
+  padding: 5% 0;
+  border-radius: 5px;
+}
+.tel-link {
+  background-color: #7277c0;
+  padding: 2%;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 5px;
+}
+.tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+}
+
+.tab-desk {
+  display: none;
+}
+
+/* Style rules for Form */
+form {
+  border-collapse: collapse;
+  margin: 0 auto;
+  display: table
+}
+
+/* Style rules for footer */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #0000003a;
+  color: #000000;
+
+}
+
+footer p {
+  margin: 0.5% 0;
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Style rules for Table */
+table {
+  background-color:#c4c6e7;
+  margin: 0 auto;
+  border-collapse: collapse;
+  display: table;
+}
+
+th, td {
+  border: solid black 1px;
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: #a6a7db;
+}
+/* Hide Service list */
+.service-list {
+  list-style-type: none;
+  display: none;
+}
+
+/* Contact Style Rules */
+  #nail {
+    padding-right: 5%;
+    display: block;
+  }
+
+  legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 1%;
+  }
+  label {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.25em;
+    padding-top: 1%;
+  }
+  input, textarea {
+    padding: 1%;
+    margin: 1% 0;
+    width: 90%;
+  }
+
+  button {
+    padding: 1%;
+    margin: 1% 0;
+    width: 40%;
+  }
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 642px) {
+  /* Display tab-desk and banner classes, hide mobile class */
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .banner {
+    display: block;
+  }
+
+  /* Tablet Viewport: Navigation Styles */
+  nav li {
+    font-size: 1.25em;
+    display: inline-block;
+    border: none;
+    border-left: black solid 1px;
+  }
+  nav li:first-child {
+    border: none;
+  }
+
+/* Tablet Viewport: Grid Styles */
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  aside {
+    grid-column: 1 / span 2
+  }
+  /* Tablet Viewport: Services Styles */
+  .service-list li{
+    padding: 1.5em 0;
+  }
+
+  /* Tablet Viewport: Contact Styles */
+  #nail {
+    float: left;
+    width: 50%;
+  }
+
+  fieldset {
+    margin-right: 15%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 935px) {
+/* Display hide class, hide tel-link id */
+  .tel-link {
+    display: none;
+  }
+
+  #bath {
+    float: left;
+    padding-left: 5%;
+    width: 40%;
+  }
+
+  body {
+    background: linear-gradient(to right, #a6a7db, #e4e3e9);
+  }
+
+  nav li {
+    font-size: 1.5em;
+  }
+
+  .service-list {
+    margin: 5%;
+    font-size: 75%;
+    column-count: 2;
+  }
+
+  .service-list li {
+    padding: 2em 0;
+  }
+
+  .service-list li:first-child, .service-list li:nth-child(4) {
+    padding: 0 0;
+  }
+
+  aside {
+    clear: both;
+    grid-column: 1 / span 4;
+  }
+
+/* Show service list, hide table */
+  .service-list {
+    display: block;
+  }
+  table {
+    display: none;
+  }
+}
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1700px) {
+  nav li {
+    font-size: 2em;
+  }
+
+  main ul {
+    font-size: 95%;
+  }
+
+  body {
+    width: 1700px;
+    margin: 0 auto;
+  }
+}
+/* Media Query for Print */
+@media print {
+  #wrapper {
+    background-color: #fff;
+    color: #000;
+  }
+}

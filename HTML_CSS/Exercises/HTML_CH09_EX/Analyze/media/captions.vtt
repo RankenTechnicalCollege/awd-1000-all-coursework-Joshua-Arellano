@@ -7,7 +7,29 @@ File Name: captions.vtt
 Date: 9/26/2025
 
 1
-00:01:000 --> 00:03:00
-Caption
+00:00.000 --> 00:04.000
+Responsive web design provides an optimum viewing experience.
 
 2
+00:04.000 --> 00:09.000
+For Desktop, Tablet, and Mobile devices.
+
+3
+00:09.000 --> 00:12.000
+Begin by creating a wireframe for each viewport.
+
+4
+00:13.000 --> 00:18.000
+Larger viewports allow for multiple columns of content.
+
+5
+00:19.000 --> 00:23.000
+Use a single column layout for mobile viewports.
+
+6
+00:24.000 --> 00:26.000
+When the wireframes are complete-
+
+7
+00:26.000 --> 00:30.000
+You can begin the webpage development.
