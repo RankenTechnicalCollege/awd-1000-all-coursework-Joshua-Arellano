@@ -24,11 +24,14 @@ body {
 .text-lg {
   color: rgb(101, 165, 101);
 }
+
 .bg-img {
   background-image: url(../images/outside.jpg);
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 400px;
+}
+
 .bg-img h1, .bg-img p {
   text-shadow: 2px 2px 4px black;
 }
