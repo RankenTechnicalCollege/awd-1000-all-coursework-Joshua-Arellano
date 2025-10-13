@@ -9,6 +9,7 @@
     padding: 0;
 }
 
+/* Color Styles */
 body {
   background-color: rgb(101, 165, 101);
 }
@@ -25,13 +26,32 @@ body {
   color: rgb(101, 165, 101);
 }
 
+/* Jumbotron Styles */
 .bg-img {
   background-image: url(../images/outside.jpg);
   background-size: cover;
+  height: 300px;
   background-position: center;
-  height: 400px;
 }
 
-.bg-img h1, .bg-img p {
+.bg-img h1, .bg-img p, .sale-img p, .sale-img h1 {
   text-shadow: 2px 2px 4px black;
+}
+
+.sale-img {
+  background-image: url(../images/seeds.jpg);
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card Styles */
+.card {
+  max-width: 400px;
+}
+
+@media (max-width: 576px) {
+  .card {
+    max-width: 90%;
+  }
 }

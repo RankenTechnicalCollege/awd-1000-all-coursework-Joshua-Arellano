@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container bg-body-secondary">
+      <!--Row 1 - Flexbox-->
+      <div class="row text-center">
+        <p><span class="h1">Flexbox Layout</span></p>
+        <!--Column 1 - Accordion-->
+        <div class="col-md-2 flex-fill p-3">
+          <div class="accordion" id="accordionPizza">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Pizza
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionPizza">
+                <div class="accordion-body">
+                  <strong>Pizza</strong> is a beloved dish that originated in Italy and has become a global favorite. It typically consists of a round, flat base of dough topped with tomato sauce, cheese, and various toppings such as vegetables, meats, and herbs. Pizza is known for its versatility, allowing for endless combinations of flavors and styles, from classic pepperoni to more adventurous options like BBQ chicken or vegetarian. It is often enjoyed as a casual meal with friends and family, making it a staple in many cultures around the world.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Column 2 - List Group-->
+        <div class="col-md-2 flex-fill p-3">
+          <ul class="list-group">
+            <li class="list-group-item active">Burger</li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstcheckboxstretched">
+              <label for="firstcheckboxstretched" class="form-check-label stretched-link">Buns <span class="badge text-bg-secondary">Sesame</span></label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondcheckboxstretched">
+              <label for="secondcheckboxstretched" class="form-check-label stretched-link">Patty <span class="badge text-bg-secondary">Beef</span></label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdcheckboxstretched">
+              <label for="thirdcheckboxstretched" class="form-check-label stretched-link">Lettuce <span class="badge text-bg-secondary">Romaine</span></label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="fourthcheckboxstretched">
+              <label for="fourthcheckboxstretched" class="form-check-label stretched-link">Tomato <span class="badge text-bg-secondary">Beefsteak</span></label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="fifthcheckboxstretched">
+              <label for="fifthcheckboxstretched" class="form-check-label stretched-link">Cheese <span class="badge text-bg-secondary">Cheddar</span></label>
+            </li>
+          </ul>
+        </div>
+
+        <!--Column 3 - Responsive Image-->
+        <div class="col-md-2 flex-fill p-3">
+          <p class="h2">Sushi</p>
+          <img src="images/sushi.jpg" class="img-fluid" alt="">
+        </div>
+
+        <!--Column 4 - Modal dialog box-->
+        <div class="col-md-2 flex-fill p-3">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pasta">Pasta</button>
+          <div class="modal fade" id="pasta" tabindex="-1" aria-labelledby="pastaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pastaLabel">Pasta</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Pasta is a staple food of Italian cuisine, consisting of a dough made from durum wheat semolina and water, which is then shaped into various forms and cooked. It is often served with a variety of sauces, vegetables, and proteins, making it a versatile dish enjoyed worldwide.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Column 5 - Span-->
+        <div class="col-md-2 flex-fill p-3">
+            <p><span class="h2">Salad</span></p>
+        </div>
+      </div>
+
+      <!--Row 2 - Card-->
+      <div class="row mt-5 text-center">
+        <p><span class="h1">Carousel</span></p>
+        <div class="col-md-2 flex-fill p-3">
+          <div id="carousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/pickza.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="images/borger.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Makizushi.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="images/pasta.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="images/salad.jpg" class="d-block w-100" alt="">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Row 3-->
+      <div class="row text-center">
+        <p><span class="h1">Cards</span></p>
+        <div class="col-md-2 flex-fill p-3">
+          <div class="card">
+            <img src="images/homemade-pizza.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Homemade Pizza</h5>
+              <p class="card-text">Delicious homemade pizza with fresh ingredients.</p>
+              <a href="https://theschmidtywife.com/how-to-make-homemade-pizza/" target="_blank" class="btn btn-primary">Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 flex-fill p-3">
+          <div class="card">
+            <img src="images/burger-recipe.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Homemade Pizza</h5>
+              <p class="card-text">Delicious homemade pizza with fresh ingredients.</p>
+              <a href="https://theschmidtywife.com/how-to-make-homemade-pizza/" target="_blank" class="btn btn-primary">Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 flex-fill p-3">
+          <div class="card">
+            <img src="images/homemade-pizza.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Homemade Pizza</h5>
+              <p class="card-text">Delicious homemade pizza with fresh ingredients.</p>
+              <a href="https://natashaskitchen.com/perfect-burger-recipe/" target="_blank" class="btn btn-primary">Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 flex-fill p-3">
+          <div class="card">
+            <img src="images/homemade-pizza.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Homemade Pizza</h5>
+              <p class="card-text">Delicious homemade pizza with fresh ingredients.</p>
+              <a href="https://theschmidtywife.com/how-to-make-homemade-pizza/" target="_blank" class="btn btn-primary">Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 flex-fill p-3">
+          <div class="card">
+            <img src="images/homemade-pizza.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Homemade Pizza</h5>
+              <p class="card-text">Delicious homemade pizza with fresh ingredients.</p>
+              <a href="https://theschmidtywife.com/how-to-make-homemade-pizza/" target="_blank" class="btn btn-primary">Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </body>
+</html>
