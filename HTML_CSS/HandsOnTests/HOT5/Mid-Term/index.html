@@ -15,8 +15,9 @@
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -25,100 +26,55 @@
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Belleville Running Club</a>
+            <div class="container px-4 px-lg-4">
+                <img src="assets/img/brclogo.png" class="img-fluid" alt="BRC Logo" width="40" />
+                <a class="navbar-brand" href="#home">Belleville Running Club</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#WGP">Weekly Group Runs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#C25K">Couch 2 5K Training</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#merch">BRC Gear</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" id="home">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Because running is easier in a club.</h1>
-                        <hr class="divider" />
+                        <h1 class="text-white font-weight-bold">Because running is easier in a club</h1>
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Runner's Club located in Belleville, Illinois.</p>
-                        <a class="btn btn-primary btn-xl" href="#about">Join / Renew BRC Membership</a>
+                        <p class="text-white-75">Runner's Club located in Belleville, Illinois.</p>
+                        <hr class="divider">
+                        <a class="btn btn-primary btn-xl" href="https://runsignup.com/MemberOrg/BellevilleRunningClub/Register" target="_blank">Join / Renew BRC Membership</a>
+                        <ul class="text-white-75 list-unstyled mt-4">
+                            <li class="h2">Membership benefits include:</li>
+                            <li>Discounts on regional races, on BRC gear, and at sports-related-retailers</li>
+                            <li>RRCA membership and RRC Footnotes publication</li>
+                            <li>Group runs and training runs</li>
+                            <li>Access to training partners of all abilities</li>
+                            <li>Year-round social activities</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Spring 2025: Couch 2 5k Training</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Start Date: February 18th 2025</p>
-                        <p class="text-white-75 mb-4">Tuesdays 6pm at Belleville East High School</p>
-                    </div>
-                </div>
-                <div id="accordion">
-                  <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="card col-6 col-lg-3 text-center">
-                        <h2 class="card-header pb-2">Tier 1 - $20</h2>
-                        <div id="collapseOne" class="collapse show" data-bs-parent="accordion">
-                            <div class="card-body">
-                            <p>Weekly Group Training Sessions</p>
-                            <p>C25K Completion T-Shirt</p>
-                        </div>
-                        </div>
-                        <a class="btn btn-light" href="https://square.link/u/6qMNTcN6">Buy Tier 1</a>
-                    </div>
-                    <!--
-                    <div class="col-6 col-lg-3 text-center border border-3 border-end-0 border-dark p-3">
-                        <h2 class="pb-3">Tier 2 - $30</h2>
-                        <p>Weekly Group Training Sessions</p>
-                        <p>C25K Completion T-Shirt</p>
-                        <p>1 year Belleville Running Club Membership</p>
-                        <a class="btn btn-light" href="https://square.link/u/LuYguBmM">Buy Tier 2</a>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center border border-3 border-end-0 border-dark p-3">
-                        <h2 class="pb-4">Tier 3 - $55</h2>
-                        <p>Weekly Group Training Sessions</p>
-                        <p>C25K Completion T-Shirt</p>
-                        <p>1 year Belleville Running Club Membership</p>
-                        <p>2025 Law Day 5k Race Entry</p>
-                        <a class="btn btn-light" href="https://square.link/u/KPGh3iJK">Buy Tier 3</a>
-                    </div>
-                    <div class="col-6 col-lg-3 text-center border border-3 border-dark p-3">
-                        <h2>Tier 4 - $75</h2><p class="fst-italic">(Limited Time Offer)</p>
-                        <p>Weekly Group Training Sessions</p>
-                        <p>C25K Completion T-Shirt</p>
-                        <p>1 year Belleville Running Club Membership</p>
-                        <p>2025 Law Day 5k Race Entry</p>
-                        <p>Personalized Training Plan</p>
-                        <a class="btn btn-light" href="https://square.link/u/Y9eScUl4">Buy Tier 4</a>
-                    </div>
-                    -->
-                  </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services-->
-        <section class="page-section" id="services">
+        <!-- Weekly Group Runs -->
+        <section class="page-section" id="WGP">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Weekly Group Runs</h2>
                 <h5 class="text-center mt-0">We meet twice a week on Thursday evening and Saturday morning</h5>
                 <hr class="divider" />
                 <h2 class="text-center">We offer 3 and 5 mile routes for different skill levels</h2>
                 <div class="row gx-4 gx-lg-5 pb-4 pt-2">
-                    <div class="col-md-6 text-center">
-                        <a class="btn btn-danger btn-xl" href="https://www.mapmyrun.com/routes/view/10951380">View 3-Mile Route</a>
+                    <div class="col-md-6 text-center pb-3">
+                        <a class="btn bg-primary text-white btn-xl" href="https://www.mapmyrun.com/routes/view/10951380" target="_blank">View 3-Mile Route</a>
                     </div>
                     <div class="col-md-6 text-center">
-                        <a class="btn btn-danger btn-xl" href="https://www.strava.com/routes/793981">View 5-Mile Route</a>
+                        <a class="btn bg-primary text-white btn-xl" href="https://www.strava.com/routes/793981" target="_blank">View 5-Mile Route</a>
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5">
@@ -130,216 +86,162 @@
                         <div class="mt-5">
                             <h3 class="h4 mb-2">Thursday Evenings - 6pm</h3>
                             <p class="text-muted mb-0">Parking lot of Casa Maria Mexican Restaurant</p>
-                            <a href="" class="mb-0 text-decoration-none d-block">100 N High St, Belleville, IL 62220</a>
+                            <a href="https://maps.app.goo.gl/3kkEaHovuuPGbBeAA" target="_blank" class="mb-0 text-decoration-none d-block">100 N High St, Belleville, IL 62220</a>
                         </div>
                     </div>
                     <div class="col-md-6 text-center">
                         <div class="mt-5">
                             <h3 class="h4 mb-2">Saturday Mornings - 8am</h3>
                             <p class="text-muted mb-0">Long Story Coffee</p>
-                            <a href="" class="mb-0 text-decoration-none d-block">732 S Illinois St, Belleville, IL 62220</a>
+                            <a href="https://maps.app.goo.gl/X33LLHmVdGyTDHgV8" target="_blank" class="mb-0 text-decoration-none d-block">732 S Illinois St, Belleville, IL 62220</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Couch 2 5k Training-->
+        <section class=" py-5 bg-primary" id="C25K">
+            <div class="container px-2 px-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Spring 2025: Couch 2 5k Training</h2>
+                        <hr class="divider divider-light"/>
+                        <p class="text-white-75 mb-4">Start Date: February 18th 2025</p>
+                        <p class="text-white-75 mb-4">Tuesdays 6pm at Belleville East High School</p>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="card col-6 col-lg-3 text-center p-2 bg-primary text-white">
+                        <p class="h2 card-header pb-5">Tier 1 - $20</p>
+                        <div class="card-body">
+                            <p class="h4 text-start border-bottom">Benefits:</p>
+                            <p class="fw-bold">- Weekly Group Training Sessions</p>
+                            <p class="fw-bold">- C25K Completion T-Shirt</p>
+                        </div>
+                        <a class="btn m-auto mt-2 btn-light" href="https://square.link/u/6qMNTcN6" target="_blank">Buy Tier 1</a>
+                    </div>
+                    <div class="card col-6 col-lg-3 text-center p-2 bg-primary text-white">
+                        <p class="h2 card-header pb-5">Tier 2 - $30</p>
+                        <div class="card-body">
+                            <p class="h4 text-start border-bottom">Benefits:</p>
+                            <p class="fw-bold">- Weekly Group Training Sessions</p>
+                            <p class="fw-bold">- C25K Completion T-Shirt</p>
+                            <p class="fw-bold">- 1 year Belleville Running Club Membership</p>
+                        </div>
+                        <a class="btn m-auto mt-2 btn-light" href="https://square.link/u/LuYguBmM" target="_blank">Buy Tier 2</a>
+                    </div>
+                    <div class="card col-6 col-lg-3 text-center p-2 bg-primary text-white">
+                        <p class="h2 card-header pb-5">Tier 3 - $55</p>
+                        <div class="card-body">
+                            <p class="h4 text-start border-bottom">Benefits:</p>
+                            <p class="fw-bold">- Weekly Group Training Sessions</p>
+                            <p class="fw-bold">- C25K Completion T-Shirt</p>
+                            <p class="fw-bold">- 1 year Belleville Running Club Membership</p>
+                            <p class="fw-bold">- 2025 Law Day 5K Race Entry</p>
+
+                        </div>
+                        <a class="btn m-auto mt-2 btn-light" href="https://square.link/u/KPGh3iJK" target="_blank">Buy Tier 3</a>
+                    </div>
+                    <div class="card col-6 col-lg-3 text-center p-2 bg-primary text-white">
+                        <div class="card-header p-1">
+                            <p class="h2">Tier 4 - $75</p>
+                            <p class="fst-italic">(Limited Availability)</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="h4 text-start border-bottom">Benefits:</p>
+                            <p class="fw-bold">- Weekly Group Training Sessions</p>
+                            <p class="fw-bold">- C25K Completion T-Shirt</p>
+                            <p class="fw-bold">- 1 year Belleville Running Club Membership</p>
+                            <p class="fw-bold">- 2025 Law Day 5K Race Entry</p>
+                            <p class="fw-bold">- Personalized Training Plan</p>
+                        </div>
+                        <a class="btn m-auto mt-2 btn-light" href="https://square.link/u/Y9eScUl4" target="_blank">Buy Tier 4</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Call to action-->
-        <section class="page-section bg-dark text-white">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">Purchase Merchandise here</h2>
-                <a class="btn btn-light btn-xl" href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club">Purchase Here</a>
-            </div>
+        <section class="py-5 text-black text-center" id="merch">
+                <p class="h1">BRC Gear</p>
+                <a class="btn bg-primary btn-xl mt-2" href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club" target="_blank">Browse All</a>
         </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/tank.png" title="Project Name">
-                            <img class="img-fluid" src="assets/img/tank.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Tank Top</div>
-                            </div>
+        <!-- Gallery -->
+            <div class="container-fluid bg-primary" id="portfolio">
+                <div class="row p-3">
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/54767549" target="_blank">
+                            <img class="img-fluid" src="assets/img/tank.png" alt="Tank Top with BRC Logo">
+                                <div class="text-white text-center">Tank Tops</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/t-shirt.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/885122025" target="_blank">
+                            <img class="img-fluid" src="assets/img/t-shirt.png" alt="T-Shirt with BRC Logo">
+                                <div class="text-white text-center">T-Shirts</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/long-sleeve.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/23805514" target="_blank">
+                            <img class="img-fluid" src="assets/img/long-sleeve.png" alt="Long Sleeve with BRC Logo">
+                                <div class="text-white text-center">Long Sleeves</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/hoodie.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/22421174" target="_blank">
+                            <img class="img-fluid" src="assets/img/hoodie.png" alt="Hoodie with BRC Logo">
+                                <div class="text-white text-center">Hoodies</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/hat.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/613962739" target="_blank">
+                            <img class="img-fluid" src="assets/img/hat.png" alt="Hat with BRC Logo">
+                                <div class="text-white text-center">Hats</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/beanie.png" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/901513797" target="_blank">
+                            <img class="img-fluid" src="assets/img/beanie.png" alt="Beanie with BRC Logo">
+                                <div class="text-white text-center">Beanies</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/shorts.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/885121892" target="_blank">
+                            <img class="img-fluid" src="assets/img/shorts.png" alt="Shorts with BRC Logo">
+                                <div class="text-white text-center">Shorts</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/joggers.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/49054682" target="_blank">
+                            <img class="img-fluid" src="assets/img/joggers.png" alt="Joggers with BRC Logo">
+                                <div class="text-white text-center">Joggers</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/flannel-pants.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/49511129" target="_blank">
+                            <img class="img-fluid" src="assets/img/flannel-pants.png" alt="Flannel Pants with BRC Logo">
+                                <div class="text-white text-center">Flannel Pants</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/bag.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/901795208" target="_blank">
+                            <img class="img-fluid" src="assets/img/bag.png" alt="Bag with BRC Logo">
+                                <div class="text-white text-center">Backpacks</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/slides.png" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/909080452" target="_blank">
+                            <img class="img-fluid" src="assets/img/slides.png" alt="Slides with BRC Logo">
+                                <div class="text-white text-center">Slides</div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/tumbler.png" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
+                    <div class="col-xl-2 col-sm-3 col-4 pt-4 pb-4">
+                        <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club/styles/909080455" target="_blank">
+                            <img class="img-fluid" src="assets/img/tumbler.png" alt="Tumbler with BRC Logo">
+                                <div class="text-white text-center">Tumblers</div>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Let's Get In Touch!</h2>
-                        <hr class="divider" />
-                        <p class="text-muted mb-5">Ready to start your next project with us? Send us a messages and we will get back to you as soon as possible!</p>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                    <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div>+1 (555) 123-4567</div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2025 - Belleville Running Club</div></div>
