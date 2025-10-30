@@ -3,17 +3,17 @@
       Project 03-05
 
       Application to generate a horizontal bar chart
-      Author: 
-      Date:   
+      Author: Joshua Arellano
+      Date: 10/29/2025
 
       Filename: project03-05.js
 */
 
 // Array of phone models sold by the company
-let phones = ("Photon 6E", "Photon 6X", "Photon 7E", "Photon 7X", "Photon 8P");
+let phones = ["Photon 6E", "Photon 6X", "Photon 7E", "Photon 7X", "Photon 8P"];
 
 // Units sold in the previous quarter
-let sales = (10281, 12255, 25718, 21403, 16142]);
+let sales = [10281, 12255, 25718, 21403, 16142];
 
 // Variable to calculate total sales
 let totalSales = 0;

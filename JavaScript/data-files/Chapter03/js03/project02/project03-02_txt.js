@@ -1,13 +1,15 @@
 /*    JavaScript 7th Edition
       Chapter 3
-      Project 03-02
+      Project 03-02lenovo gaming laptop amd rx 6800s
 
       Application to generate a slide gallery
-      Author: 
-      Date:   
+      Author: Joshua Arellano
+      Date: 10/28/2025
 
       Filename: project03-02.js
 */
+
+
 
 let captions = new Array(14);
 captions[0]="International Space Station fourth expansion [2009]";
@@ -26,3 +28,13 @@ captions[12]="The International Space Station third expansion [2007]";
 captions[13]="The ISS over the Ionian Sea [2007]";
 
 
+let htmlCode = "";
+
+for ( let i = 0; i < captions.length; i++ ) {
+      htmlCode += "<figure>\n";
+      htmlCode += "<img alt='' src='slide" + i + ".jpg'/>";
+      htmlCode += "<figcaption>" + captions[i] + "</figcaption>";
+      htmlCode += "</figure>";
+}
+
+document.getElementById("gallery").innerHTML = htmlCode;
