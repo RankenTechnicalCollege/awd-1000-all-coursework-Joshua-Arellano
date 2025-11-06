@@ -3,12 +3,14 @@
       Project 04-02
 
       Application to display a random Jane Austen Quote
-      Author: 
-      Date:   
+      Author: Joshua Arellano
+      Date: 11/6/2025
 
       Filename: project04-02.js
 */
 
+// Parse code using strict mode
+"use strict";
 
 // Array of Jane Austen Quotes
 let quotes = [
@@ -24,7 +26,6 @@ let quotes = [
 "The person, be it gentlemen or lady, who has not pleasure in a good novel, must be intolerably stupid."
 ];
 
-
 // Run the quote generator every time the page loads
 window.addEventListener("load", quoteGenerator);
 
@@ -33,17 +34,17 @@ window.addEventListener("load", quoteGenerator);
 function quoteGenerator() {
    
    // Number of quotes in the array
-   quoteCount = quotes.length;
+   let quoteCount = quotes.length;
    
    // Generate a random integer to select a quote
-   randomQuote = randomInt(0, quoteCount);
+   let randomQuote = randomInt(0, quoteCount - 1);
    
    // Retrieve a randomly-selected quote
-   quote = quotes[randomQuotes];
+   let quote = quotes[randomQuote];
    
    
    // Display the random quote
-   document.getElementByTagName("blockquote")[1].innerHTML = quote;
+   document.getElementsByTagName("blockquote")[0].innerHTML = quote;
 }
 
 

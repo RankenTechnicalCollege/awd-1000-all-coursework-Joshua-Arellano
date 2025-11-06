@@ -2,9 +2,9 @@
       Chapter 4
       Project 04-05
 
-      Degrees <-> Radians Coverter
-      Author: 
-      Date:   
+      Degrees <-> Radians Converter
+      Author: Joshua Arellano
+      Date: 11/6/2025
 
       Filename: project04-05.js
  */
