@@ -10,10 +10,12 @@
       Filename: project05-02.js
 */
 
-const images = document.getElementsByTagName("img");
-const photoBucket = document.getElementById("photo_bucket");
-const photoList = document.getElementById("photo_list");
+// Declare variables
+let images = document.getElementsByTagName("img");
+let photoBucket = document.getElementById("photo_bucket");
+let photoList = document.getElementById("photo_list");
 
+// For loop to assign onclick event to images
 for (let i = 0; i < images.length; i++) {
       images[i].onclick = function() {
       if (this.parentElement.id === "photo_bucket") {
