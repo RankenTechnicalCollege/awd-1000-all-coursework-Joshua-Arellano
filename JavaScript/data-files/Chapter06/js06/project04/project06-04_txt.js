@@ -5,7 +5,7 @@
 
       Project to turn a selection list into a selection of hypertext links
       Author: Joshua Arellano
-      Date:   
+      Date: 11/20/2025
 
       Filename: project06-04.js
 */
@@ -61,28 +61,30 @@ model.onchange = function() {
 }
 
 function showAll(selectList) {
-   let options = selectList.option;
+   let options = selectList.options;
    let optionLength = options.length;
 
-   for (let i = 0; i < optionsLength; i++) {
-      style.display = "block";
+   for (let i = 0; i < optionLength; i++) {
+      options[i].style.display = "block";
    }
 }
 
-function filterSelect(selectlist, category) {
-   let options = selectList.option;
-   let optitonLength = options.length;
+function filterSelect(selectList, category) {
+   let options = selectList.options;
+   let optionLength = options.length;
 
-   for (let i = 0; i < optionsLength; i++) {
-      if (className === category) {
-         style.display = "block";
+   for (let i = 0; i < optionLength; i++) {
+      if (options[i].className === category) {
+         options[i].style.display = "block";
       } else {
-         style.display = "none";
+         options[i].style.display = "none";
       }
    }
 }
 
+// Event handler to generate text of vehicle selection
 selectVehicle.onclick = function() {
-   getElementById("vehicle").innerHTML = "make model trim";
-   
+   vehicle.textContent = make.options[make.selectedIndex].text + " " + 
+                    model.options[model.selectedIndex].text + " " + 
+                    trim.options[trim.selectedIndex].text;
 }

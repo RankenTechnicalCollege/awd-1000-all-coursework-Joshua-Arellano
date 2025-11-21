@@ -4,8 +4,8 @@
       Project 06-05
 
       Project to submit a registration form
-      Author: 
-      Date:   
+      Author: Joshua Arellano
+      Date: 11/20/2025
 
       Filename: project06-05.js
 */
@@ -32,12 +32,12 @@ window.addEventListener("load", function() {
 // Function to verify that a session was selected by the user
 function sessionTest() {
    var confSession = document.getElementById("sessionBox");
-   if (confSession.selectedIndex === -1) {
-      confSession.setValidity("Select a Session Package");
+   if (confSession.selectedIndex === 0) {
+      confSession.setCustomValidity("Select a Session Package");
    } else {
       confSession.setValidity("");
    }
-}
+} 
 
 // Function to calculate the shopping cart total
 function calcCart() {
