@@ -4,8 +4,8 @@
       Project 07-04
 
       Project to create a customer queue
-      Author: 
-      Date:   
+      Author: Joshua Arellano
+      Date: 11/25/2025
 
       Filename: project07-04.js
 */
@@ -35,8 +35,43 @@ function generateCustomerList() {
    customerList.innerHTML = "";
    for (let i = 0; i < customers.length; i++) {
       let customerItem = document.createElement("li");      
-      customerItem.textContent = customers[i];     
+      customerItem.textContent = customers[i];
+      // Fixes the list numbering
+      customerItem.value = i + 1;
       customerList.appendChild(customerItem);
    }
 }
 
+addButton.onclick = function() {
+   customers.push(customerName.value);
+   generateCustomerList();
+   status.textContent = customerName.value + " added to the end of the queue.";
+}
+
+searchButton.onclick = function() {
+   let place = customers.indexOf(customerName.value) + 1;
+
+   if (place === 0) {
+      status.textContent = customerName.value + " is not found in the queue.";
+   } else {
+      status.textContent = customerName.value + " found in position " + place + " of the queue.";
+   }
+}
+
+removeButton.onclick = function() {
+   let index = customers.indexOf(customerName.value);
+
+   if (index !== -1) {
+      customers.splice(index, 1);
+      status.textContent = customerName.value + " removed from queue.";
+      generateCustomerList();
+   } else {
+      status.textContent = customerName.value + " is not found in the queue.";
+   }
+}
+
+topButton.onclick = function() {
+   let topCustomer = customers.shift();
+   status.textContent = topCustomer + " removed from the queue.";
+   generateCustomerList();
+}
