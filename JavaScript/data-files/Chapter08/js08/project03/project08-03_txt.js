@@ -19,15 +19,15 @@ let cart = {
    }
 }
 
-function Pizza (size, crust) {
-   this.size = size;
-   this.crust = crust;
+function Pizza() {
+   this.size = null;
+   this.crust = null;
    this.toppings = [];
 }
 
-function Topping (name, side) {
-   this.name = name;
-   this.side = side;
+function Topping () {
+   this.name = null;
+   this.side = null;
 }
 
 Pizza.prototype.addToCart = function(cart) {
@@ -35,7 +35,8 @@ Pizza.prototype.addToCart = function(cart) {
 }
 
 Pizza.prototype.summarize = function() {
-   let summary = "Pizza:" + this.size + " " + this.crust;
+   let summary = "Pizza:";
+   summary += this.size + " " + this.crust;
 
    for (let i = 0; i < this.toppings.length; i++) {
       summary += " " +this.toppings[i].name + " (" + this.toppings[i].side + ")";
@@ -107,10 +108,12 @@ function buildPizza() {
    myPizza.crust = pizzaCrustBox.value;
 
    for (let i = 0; i < checkedToppings.length; i++) {
-      let myTopping = new Topping();
-      myTopping.name = checkedToppings[i].name;
-      myTopping.side = checkedToppings[i].value;
-      myPizza.addTopping = function(topping){};
+      if (checkedToppings[i].value !== "none") { // Not stated in the book but needed to filter out "none" toppings
+         let myTopping = new Topping();
+         myTopping.name = checkedToppings[i].name;
+         myTopping.side = checkedToppings[i].value;
+         myPizza.toppings.push(myTopping);
+      }
    }
 
    return myPizza;
@@ -118,10 +121,10 @@ function buildPizza() {
 
 // Function to add the built pizza to the shopping cart
 function updateCart() {
-   myPizza = buildPizza();
+   let myPizza = buildPizza();
    cart.addItem(myPizza);
    console.log(cart);
-   cartBox.appendChild(document.createElement("p").textContent = myPizza.summarize());
+   cartBox.appendChild(document.createElement("p")).textContent = myPizza.summarize();
    clearPizzaImage();
    clearToppings();
 }  

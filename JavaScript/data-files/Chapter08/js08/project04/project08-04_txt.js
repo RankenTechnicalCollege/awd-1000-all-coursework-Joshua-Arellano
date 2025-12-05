@@ -1,11 +1,15 @@
 "use strict";
+
+//---const { createElement } = require("react");---//
+//^^^This line does not work with the code below^^^//
+
 /*    JavaScript 7th Edition
       Chapter 8
       Project 08-04
 
       Retrieve Staff Data from a JSON File
-      Author: 
-      Date:   
+      Author: Joshua Arellano
+      Date: 12/5/2025
 
       Filename: project08-04.js
 */
@@ -24,14 +28,33 @@ getFileButton.onchange = function() {
 
    // Once the file has finished loading, parse the JSON file
    fr.onload=function(){ 
-
+      let staff = JSON.parse(fr.result);
+      makeStaffTable(staff);
    }
-   
 };
 
 function makeStaffTable(staff) {
    let staffTable = document.createElement("table");
    let headerRow = document.createElement("tr");
    
+   // Create table rows containing property names
+   for (let prop in staff.directory[0]) {
+      let headerCell = document.createElement("th")
+      headerCell.textContent = prop;
+      headerRow.appendChild(headerCell);
+   }
+   staffTable.appendChild(headerRow);
 
+   //Create table rows containing property values
+   for (let i = 0; i < staff.directory.length; i++) {
+      let tableRow = document.createElement("tr");
+
+      for (let prop in staff.directory[i]) {
+         let tableCell = document.createElement("td");
+         tableCell.textContent = staff.directory[i][prop];
+         tableRow.appendChild(tableCell);
+      }
+      staffTable.appendChild(tableRow);
+   }
+   containerBox.appendChild(staffTable);
 }

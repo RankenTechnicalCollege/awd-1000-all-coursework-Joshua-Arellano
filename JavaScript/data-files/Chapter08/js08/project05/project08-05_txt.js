@@ -4,8 +4,8 @@
       Project 08-05
 
       Interface to replay a chess game stored in a JSON file
-      Author: 
-      Date:   
+      Author: Joshua Arellano
+      Date: 12/5/2025
 
       Filename: project08-05.js
 */
@@ -34,9 +34,9 @@ getLogButton.onchange = function() {
 
    // Once the file has finished loading, parse the JSON file
    // and store the contents in the game object literal
-   fr.onload=function(){ 
+   fr.onload = function() { 
       // Load data from the JSON file into the game object
-      let game = json.parse(fr.result);
+      let game = JSON.parse(fr.result);
       
       titleBox.textContent = game.title;
       descBox.textContent = game.description;
@@ -44,7 +44,7 @@ getLogButton.onchange = function() {
       writeMoveLog(game.moves);
       
       // Create a new chess set object
-      let mySet = chessSet(game);
+      let mySet = new chessSet(game);
       
       setupBoard(mySet);
       
@@ -59,7 +59,6 @@ getLogButton.onchange = function() {
          }
       }      
    }
-   
 };
 
 function writeMoveLog(moves) {
