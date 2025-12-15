@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="416pt" height="560pt" viewBox="0 0 416 560"
+ preserveAspectRatio="xMidYMid meet">
+
+<!-- Glow filter -->
+<defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<g transform="translate(0,560) scale(0.1,-0.1)"
+   fill="none"
+   stroke="#00E5FF"
+   stroke-width="25"
+   filter="url(#glow)">
+
+<!-- Original avatar paths, now neon-stroked -->
+<path d="M1953 5059 c-5 -5 -40 -16 -76 -24 -36 -7 -80 -21 -99 -31 -82 -42
+-158 -126 -191 -212 -20 -50 -40 -187 -38 -258 1 -45 -2 -52 -23 -62 -59 -27
+-83 -127 -48 -205 21 -47 73 -90 97 -80 8 3 16 -8 20 -29 12 -55 45 -109 103
+-170 l56 -58 -41 -40 c-23 -21 -44 -48 -48 -60 -5 -17 -15 -20 -60 -20 -75 0
+-205 -27 -234 -48 -13 -9 -29 -32 -35 -49 -6 -18 -26 -43 -45 -55 -40 -26 -92
+-108 -116 -182 -34 -102 -104 -395 -135 -564 -30 -159 -31 -174 -17 -196 9
+-14 32 -28 53 -33 l38 -8 2 -160 c3 -199 27 -413 60 -515 38 -122 107 -192
+202 -206 l43 -6 -2 -618 c-1 -441 2 -623 10 -638 18 -33 73 -42 275 -42 l188
+0 34 34 34 34 0 309 c0 171 3 425 7 566 l6 257 34 0 34 0 -3 -82 c-1 -46 -2
+-300 0 -565 l2 -483 29 -32 29 -33 216 0 216 1 26 26 26 26 -1 621 -2 621 26
+0 c15 0 49 10 76 22 133 57 186 230 196 639 l5 226 44 11 c78 21 78 13 -7 408
+-79 372 -114 466 -200 555 -27 27 -56 63 -65 78 -28 47 -125 80 -237 81 -58 0
+-59 0 -115 60 l-57 59 47 41 c43 36 118 161 118 194 0 7 14 16 32 21 17 6 45
+27 62 48 25 31 31 49 34 101 5 74 -13 118 -57 140 -22 12 -27 21 -24 38 7 36
+-25 232 -48 293 -33 87 -85 145 -170 188 -41 20 -96 41 -122 46 -27 5 -54 14
+-60 20 -14 14 -90 14 -104 0z"/>
+<path d="M1810 4440 c-30 -30 -28 -113 2 -134 53 -37 94 2 85 81 -7 69 -47 93
+-87 53z"/>
+<path d="M2133 4445 c-19 -13 -23 -26 -23 -66 0 -106 96 -123 106 -18 8 78
+-33 119 -83 84z"/>
+<path d="M1975 4150 c28 -12 73 -12 80 0 4 6 -14 10 -47 9 -39 0 -48 -3 -33
+-9z"/>
+</g>
+
+<!-- Shirt text -->
+<text x="56%" y="42%" text-anchor="middle"
+      font-family="Poppins, Montserrat, sans-serif"
+      font-size="14"
+      fill="#00E5FF"
+      style="paint-order: stroke; stroke: #000; stroke-width: 6;"
+      filter="url(#glow)">
+  RANKEN
+</text>
+
+</svg>
